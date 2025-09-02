@@ -1,3 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tell Tailwind v4 to load */
+@import "tailwindcss";
+
+/* (Optional) if you have a config file and want to use it */
+@config "../tailwind.config.cjs";
+
+/* Tell Tailwind where to scan for class names */
+@source "../index.html";
+@source "./**/*.{js,jsx,ts,tsx}";
+
+/* You can keep any global styles too */
+html, body, #root { height: 100%; }
+body { font-family: system-ui, sans-serif; }
