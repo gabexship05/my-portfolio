@@ -11,3 +11,40 @@
 /* You can keep any global styles too */
 html, body, #root { height: 100%; }
 body { font-family: system-ui, sans-serif; }
+
+/* Smoothly rotate colors on the text gradient */
+@keyframes hue {
+    from { filter: hue-rotate(0deg); }
+    to   { filter: hue-rotate(360deg); }
+  }
+  .animate-hue {
+    animation: hue 8s linear infinite;
+    will-change: filter;
+  }
+  
+  /* Respect reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-hue { animation: none; }
+  }
+
+  /* Animated gradient text: pink → purple → blue (slow) */
+.gradient-fade {
+    background-image: linear-gradient(90deg, #ec4899, #a855f7 50%, #06b6d4);
+    background-size: 220% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gf-pan 12s ease-in-out infinite alternate; /* slower */
+  }
+  
+  @keyframes gf-pan {
+    0%   { background-position:   0% 0; }
+    100% { background-position: 100% 0; }
+  }
+  
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .gradient-fade { animation: none; }
+  }
+  
+  

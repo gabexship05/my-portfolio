@@ -3,12 +3,11 @@ export default function App() {
     <div className="min-h-screen bg-neutral-950 text-neutral-100 font-sans">
       {/* HERO */}
       <section className="flex flex-col items-center justify-center h-screen text-center px-6">
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-          Hi, I’m{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
-            Gabriel
-          </span>
-        </h1>
+      <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+  Hi, I’m{" "}
+  <span className="gradient-fade">Gabriel</span>
+</h1>
+
         <p className="mt-4 max-w-xl text-lg text-neutral-300">
           IT enthusiast, networking explorer, and aspiring cybersecurity pro.
         </p>
