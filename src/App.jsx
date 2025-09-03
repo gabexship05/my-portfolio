@@ -45,17 +45,14 @@ export default function App() {
                 src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               />
             </div>
-            <a
-              href="https://github.com/gabexship05"
-              target="_blank"
-              rel="noreferrer"
-              className="group relative mt-4 inline-flex items-center gap-2 overflow-hidden rounded-full border border-white/20 px-4 py-2 text-sm font-medium text-purple-300 transition hover:text-black hover:shadow hover:shadow-purple-500/20 focus:outline-none focus:ring-2 focus:ring-purple-400/40"
-            >
-              {/* gradient background shows on hover */}
-              <span className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 transition group-hover:opacity-100" />
-              <span className="relative">View Projects</span>
-              <span aria-hidden className="relative transition-transform group-hover:translate-x-0.5">→</span>
-            </a>
+              <a
+                href="/electronics"  // <— was #electronics or GitHub
+                className="group relative mt-4 inline-flex items-center gap-2 overflow-hidden rounded-full border border-white/20 px-4 py-2 text-sm font-medium text-purple-300 transition hover:text-black hover:shadow hover:shadow-purple-500/20 focus:outline-none focus:ring-2 focus:ring-purple-400/40"
+              >
+                <span className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 transition group-hover:opacity-100" />
+                <span className="relative">View Projects</span>
+                <span aria-hidden className="relative transition-transform group-hover:translate-x-0.5">→</span>
+              </a>
           </div>
 
           {/* IT */}
