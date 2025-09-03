@@ -1,3 +1,6 @@
+import Typewriter from "./components/Typewriter.jsx";
+
+
 export default function App() {
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 font-sans">
@@ -9,8 +12,20 @@ export default function App() {
 </h1>
 
         <p className="mt-4 max-w-xl text-lg text-neutral-300">
-          IT enthusiast, networking explorer, and aspiring cybersecurity pro.
-        </p>
+  <Typewriter
+    words={[
+      "Internet Explorer",
+      "Amplifiers Designer",
+      "Aspiring cybersecurity pro",
+      "Music Addicted",
+      "Web developer",
+    ]}
+    typingSpeed={70}
+    deletingSpeed={40}
+    pauseTime={900}
+  />
+    </p>
+
         <div className="mt-6 flex gap-4">
           <a
             href="#portfolio"
