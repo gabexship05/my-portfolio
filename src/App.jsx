@@ -1,5 +1,9 @@
 import BackgroundBlobs from "./components/BackgroundBlobs.jsx";
 
+import Skills from "./components/Skills.jsx";
+
+import About from "./components/About.jsx";
+
 import Typewriter from "./components/Typewriter.jsx";
 
 
@@ -46,6 +50,10 @@ export default function App() {
           </a>
         </div>
       </section>
+
+      <About/>
+
+      <Skills />
 
       {/* PORTFOLIO */}
       <section id="portfolio" className="py-24 px-6 max-w-5xl mx-auto text-center">
