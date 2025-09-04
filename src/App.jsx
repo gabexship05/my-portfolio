@@ -1,9 +1,14 @@
+import BackgroundBlobs from "./components/BackgroundBlobs.jsx";
+
 import Typewriter from "./components/Typewriter.jsx";
 
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-100 font-sans">
+    <div className="relative isolate overflow-hidden min-h-screen bg-neutral-950 text-neutral-100 font-sans">
+
+  <BackgroundBlobs />
+
       {/* HERO */}
       <section className="flex flex-col items-center justify-center h-screen text-center px-6">
       <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
@@ -14,11 +19,11 @@ export default function App() {
         <p className="mt-4 max-w-xl text-lg text-neutral-300">
   <Typewriter
     words={[
-      "Internet Explorer",
-      "Amplifiers Designer",
-      "Aspiring cybersecurity pro",
+      "Cybersecurity Analyst",
+      "Web Developer",
+      "Electronics Techncian",
       "Music Addicted",
-      "Web developer",
+      "Professional GOOGLE Searcher ",
     ]}
     typingSpeed={70}
     deletingSpeed={40}
