@@ -1,4 +1,7 @@
 // src/components/Skills.jsx
+import { Link } from "react-router-dom";
+
+
 function SkillItem({ label, slug, color }) {
   // slug = simpleicons id (e.g., "react", "nodedotjs")
   // color = hex without '#'
@@ -50,6 +53,17 @@ export default function Skills() {
         <span className="text-purple-400/70">{`}`}</span>
         <span className="sr-only">end</span>
       </h2>
+
+{/* Open skills search */}
+<div className="mt-4">
+  <Link
+    to="/brain"
+    className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm hover:bg-white/10 transition focus:outline-none focus:ring-2 focus:ring-purple-400/40"
+  >
+    Open skills search <span aria-hidden>↗</span>
+  </Link>
+</div>
+
 
       <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_auto_1fr]">
         {/* Left: summary */}
