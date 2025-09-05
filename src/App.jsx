@@ -6,6 +6,7 @@ import About from "./components/About.jsx";
 
 import Typewriter from "./components/Typewriter.jsx";
 
+import { Link } from "react-router-dom";
 
 export default function App() {
   return (
@@ -56,6 +57,7 @@ export default function App() {
       <Skills />
 
       {/* PORTFOLIO */}
+      
       <section id="portfolio" className="py-24 px-6 max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-10">My Work</h2>
 

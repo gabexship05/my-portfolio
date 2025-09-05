@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollToTop from "../components/ScrollToTop.jsx";
 
 // --- data you can edit anytime ---
 const ABILITIES = [
@@ -97,6 +98,9 @@ export default function Brain() {
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100">
+
+        <ScrollToTop />
+
       <header className="px-6 max-w-5xl mx-auto py-6 flex items-center justify-between">
         <a href="/" className="text-sm text-neutral-400 hover:text-neutral-200 transition">← Back to Home</a>
         <h1 className="text-xl text-neutral-400">/brain</h1>
