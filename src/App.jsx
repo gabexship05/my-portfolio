@@ -8,11 +8,17 @@ import Typewriter from "./components/Typewriter.jsx";
 
 import { Link } from "react-router-dom";
 
+import ScrollProgress from "./components/ScrollProgress.jsx";
+
+import Reveal from "./components/Reveal.jsx";
+
 export default function App() {
   return (
     <div className="relative isolate overflow-hidden min-h-screen bg-neutral-950 text-neutral-100 font-sans">
 
   <BackgroundBlobs />
+
+  <ScrollProgress />
 
       {/* HERO */}
       <section className="flex flex-col items-center justify-center h-screen text-center px-6">
